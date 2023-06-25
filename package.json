@@ -1,80 +1,33 @@
 {
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "name": "vue3_core",
+  "name": "vue3_code",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": ".commitlintrc.js",
   "scripts": {
-    "build": "node scripts/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hxmhxm1/vue3_code.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hxmhxm1/vue3_code/issues"
+  },
+  "homepage": "https://github.com/hxmhxm1/vue3_code#readme",
   "devDependencies": {
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "rollup": "^2.56.3",
-    "rollup-plugin-typescript2": "^0.34.1",
-    "typescript": "^5.0.4"
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
   },
-  "dependencies": {
-    "builtin-modules": "^3.3.0",
-    "commondir": "^1.0.1",
-    "cross-spawn": "^7.0.3",
-    "deepmerge": "^4.3.1",
-    "estree-walker": "^1.0.1",
-    "find-cache-dir": "^3.3.2",
-    "find-up": "^4.1.0",
-    "fs-extra": "^8.1.0",
-    "fsevents": "^2.3.2",
-    "function-bind": "^1.1.1",
-    "get-stream": "^6.0.1",
-    "graceful-fs": "^4.2.11",
-    "has": "^1.0.3",
-    "human-signals": "^2.1.0",
-    "is-builtin-module": "^3.2.1",
-    "is-core-module": "^2.12.1",
-    "is-module": "^1.0.0",
-    "is-stream": "^2.0.1",
-    "isexe": "^2.0.0",
-    "jsonfile": "^4.0.0",
-    "locate-path": "^5.0.0",
-    "make-dir": "^3.1.0",
-    "merge-stream": "^2.0.0",
-    "mimic-fn": "^2.1.0",
-    "npm-run-path": "^4.0.1",
-    "onetime": "^5.1.2",
-    "p-limit": "^2.3.0",
-    "p-locate": "^4.1.0",
-    "p-try": "^2.2.0",
-    "path-exists": "^4.0.0",
-    "path-key": "^3.1.1",
-    "path-parse": "^1.0.7",
-    "picomatch": "^2.3.1",
-    "pkg-dir": "^4.2.0",
-    "resolve": "^1.20.0",
-    "semver": "^6.3.0",
-    "shebang-command": "^2.0.0",
-    "shebang-regex": "^3.0.0",
-    "signal-exit": "^3.0.7",
-    "strip-final-newline": "^2.0.0",
-    "supports-preserve-symlinks-flag": "^1.0.0",
-    "tslib": "^2.5.2",
-    "universalify": "^0.1.2",
-    "which": "^2.0.2"
-  },
-  "description": "",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/commitlint-cli/lib/cz"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
