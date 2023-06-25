@@ -9,5 +9,7 @@
 
 范围|描述|commitId
 --|--|--
+ - | bug | [3d1281f](https://github.com/hxmhxm1/vue3_code/commit/3d1281f)
+ - | 测试 | [5728909](https://github.com/hxmhxm1/vue3_code/commit/5728909)
  - | 测试 | [98b224c](https://github.com/hxmhxm1/vue3_code/commit/98b224c)
 

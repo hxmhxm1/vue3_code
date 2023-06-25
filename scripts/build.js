@@ -28,3 +28,4 @@ runParaller(dirs, build).then(() => { //promise
 })
 //注意  文件夹
 console.log(dirs)
+console.log('111')
