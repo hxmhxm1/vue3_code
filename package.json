@@ -8,7 +8,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node scripts/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "log": "conventional-changelog --config ./node_modules/commitlint-cli/lib/log -i CHANGELOG.md -s -r 0",
+    "commit": "npm run log && git add . && git-cz"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +18,13 @@
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.6.6",
+    "commitlint-cli": "^1.1.3",
+    "conventional-changelog-cli": "^3.0.0",
     "execa": "^5.1.1",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3",
     "rollup": "^2.56.3",
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.4"
@@ -67,5 +75,15 @@
     "universalify": "^0.1.2",
     "which": "^2.0.2"
   },
-  "description": ""
+  "description": "",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/commitlint-cli/lib/cz"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
