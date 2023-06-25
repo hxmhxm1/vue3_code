@@ -64,6 +64,13 @@
     "resolve-global" "1.0.0"
     "yargs" "^15.1.0"
 
+"@commitlint/config-conventional@^17.6.6":
+  "integrity" "sha512-phqPz3BDhfj49FUYuuZIuDiw+7T6gNAEy7Yew1IBHqSohVUCWOK2FXMSAExzS2/9X+ET93g0Uz83KjiHDOOFag=="
+  "resolved" "https://registry.npmjs.org/@commitlint/config-conventional/-/config-conventional-17.6.6.tgz"
+  "version" "17.6.6"
+  dependencies:
+    "conventional-changelog-conventionalcommits" "^5.0.0"
+
 "@commitlint/config-validator@^17.4.4":
   "integrity" "sha512-bi0+TstqMiqoBAQDvdEP4AFh0GaKyLFlPPEObgI29utoKEYoPQTvF0EYqIwYYLEoJYhj5GfMIhPHJkTJhagfeg=="
   "resolved" "https://registry.npmjs.org/@commitlint/config-validator/-/config-validator-17.4.4.tgz"
@@ -842,6 +849,15 @@
   "integrity" "sha512-LTTQV4fwOM4oLPad317V/QNQ1FY4Hju5qeBIM1uTHbrnCE+Eg4CdRZ3gO2pUeR+tzWdp80M2j3qFFEDWVqOV4g=="
   "resolved" "https://registry.npmjs.org/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-4.6.3.tgz"
   "version" "4.6.3"
+  dependencies:
+    "compare-func" "^2.0.0"
+    "lodash" "^4.17.15"
+    "q" "^1.5.1"
+
+"conventional-changelog-conventionalcommits@^5.0.0":
+  "integrity" "sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw=="
+  "resolved" "https://registry.npmjs.org/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-5.0.0.tgz"
+  "version" "5.0.0"
   dependencies:
     "compare-func" "^2.0.0"
     "lodash" "^4.17.15"

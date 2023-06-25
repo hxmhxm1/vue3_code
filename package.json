@@ -10,12 +10,15 @@
     "build": "node scripts/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "log": "conventional-changelog --config ./node_modules/commitlint-cli/lib/log -i CHANGELOG.md -s -r 0",
-    "commit": "npm run log && git add . && git-cz"
+    "commit": "npm run log && git add . && git-cz",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "commitizen": "^4.3.0",
